@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+    font-family: 'Press start 2P';
+    color: rgb(255, 255, 0);
+    background-color: black;
+}
+
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-areas:
+        'h'
+        'm'
+        'p'
+        'c'
+        'f';
+}
+
+.header {
+    font-size: 20px; 
+    flex-direction: column;
+    text-align: center;
+}
+
+.header > div > img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+@media (min-width: 600px) {
+    .contenedor {
+        grid-template-columns: repeat(6, 1fr); 
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+            'h h h h h h'
+            'm m p p p p'
+            'c c c c c c'
+            'f f f f f f';
+    }
+
+    .header {
+        font-size: 40px; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header > div > img {
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+    .header {
+        grid-area: h;
+        display:flex;
+        align-items: center;
+        font-size: 50px;
+        justify-content: space-between;
+           
+    }
+
+    .header > div > img {
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        padding: 30px;
+        
+    
+    }
+
+    .menu{
+        grid-area: m;
+        padding: 10px;
+        line-height: 2.5;      
+    }
+
+    .menu div:nth-of-type(1){
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    .principal{
+        grid-area: p;
+       
+    }
+
+    .productos{
+        grid-area: c;
+        padding: 10px;
+        line-height: 2.5; 
+        border: 1px solid white;
+    }
+
+    .footer{
+        grid-area: f;
+        
+    }
+
+
+.contenedor > div{
+    border: 1px solid white;
+    padding: 10px;
+    background-color: black;
+
+}
+
+.sub1 {
+    font-size: 25px;
+    color: rgb(0,255, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+.sub2 {
+
+    font-size: 15px;
+    color: rgb(244, 89, 23);
+    text-align: center;
+    font-style: italic;
+    line-height: 1.5;
+
+}
+
+.categoria{
+    background-color: rgb(244, 89, 23);
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.categoria:hover{
+    background-color: rgb(0, 21, 255);
+    cursor: pointer;
+}
+
+.sub2 p {
+    font-size: 15px;
+    color: rgb(240, 255, 166);
+    text-align: justify;
+    padding: 10px;
+}
+
+.tarjeta {
+    background-color: #373535;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    width: 200px;
+}
+
+.tarjeta > div:nth-of-type(1){
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 0);
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.tarjeta > div:nth-of-type(2)>img{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+
+.tarjeta:hover {
+    cursor: pointer;
+    background-color: rgb(0, 21, 255);
+}
+
+.cont-tarjetas{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+
+
+}
+
+footer{
+    font-family: 'Press Start 2P'; 
+    font-size: 16px;
+    text-align: center;
+    color: rgb(255, 255, 0);
+    padding: 10px;
+    margin-top: 5px;
+    font-weight:bold;
+}
