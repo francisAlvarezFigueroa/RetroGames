@@ -1,0 +1,47 @@
+[
+    
+{   
+    "id": 1,
+    "titulo": "Dreamcast",
+    "precio": 150000,
+    "imagen": "./img/dreamcast.jpg"   
+},
+
+
+{
+    "id": 2,
+    "titulo": "PlayStation", 
+    "precio": 120000,
+    "imagen": "./img/ps1.png"
+},
+
+{
+    "id": 3,
+    "titulo": "Game Boy",
+    "precio": 80000,
+    "imagen": "./img/gameBoy.jpg"
+},
+
+{
+    "id": 4,
+    "titulo": "GameBoy Adv",
+    "precio": 80000,
+    "imagen": "./img/gameBoyAdvance.jpg"
+},
+
+{
+    "id": 5,
+    "titulo": "GameCube",
+    "precio": 150000,
+    "imagen": "./img/gameCube.png"
+},
+
+{
+    "id": 6,
+    "titulo": "Nintendo DS",
+    "precio": 100000,
+    "imagen": "./img/nintendoDS.png"
+}
+
+
+]
