@@ -4,7 +4,7 @@ let productos = [];
 let carrito = [];
 
 
-//validar formato correo
+//validar formato email
 function esCorreoValido(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
